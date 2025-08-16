@@ -116,6 +116,13 @@ body{
 .review img{ width:52px; height:52px; border-radius:50%; object-fit:cover; }
 .stars{ color:#f1c40f; font-size:16px; }
 
+/* ✅ 评论区按钮居中 */
+.reviews .btn-buy{
+  display:block;
+  margin: 0 auto 16px;
+  text-align:center;
+}
+
 /* 响应式 */
 @media (max-width: 640px){
   .menu-toggle{ display:flex; }
@@ -124,7 +131,15 @@ body{
     background:var(--nav); padding:12px 16px; flex-direction:column; gap:12px;
   }
   .nav-links.show{ display:flex; }
-  .price-row{ flex-direction:column; gap:4px; }
+
+  /* ✅ 手机端价格居中 */
+  .price-row{ 
+    flex-direction:column; 
+    gap:4px; 
+    justify-content:center; 
+    align-items:center; 
+    text-align:center;
+  }
   .product-hero h1{ font-size:20px; }
 }
 </style>
